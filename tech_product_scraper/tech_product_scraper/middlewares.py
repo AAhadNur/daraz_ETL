@@ -1,3 +1,4 @@
+# Define here the models for your spider middleware
 
 import requests
 from urllib.parse import urlencode
@@ -8,7 +9,7 @@ from scrapy import signals
 from itemadapter import is_item, ItemAdapter
 
 
-class DarazscraperSpiderMiddleware:
+class TechProductScraperSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -55,7 +56,7 @@ class DarazscraperSpiderMiddleware:
         spider.logger.info("Spider opened: %s" % spider.name)
 
 
-class DarazscraperDownloaderMiddleware:
+class TechProductScraperDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.

@@ -39,7 +39,7 @@ def check_proxies():
     Write the valid_proxy list in proxy_list.txt file in our scrapy project.
     So that we can fetch valid proxies from our project quickly.
     '''
-    with open('../darazscraper/darazscraper/proxy_list.txt', 'w') as file:
+    with open('../tech_product_scraper/tech_product_scraper/proxy_list.txt', 'w') as file:
         for item in valid_proxies:
             file.write(item + "\n")
 

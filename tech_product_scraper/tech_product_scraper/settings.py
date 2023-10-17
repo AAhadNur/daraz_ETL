@@ -1,11 +1,11 @@
-# Scrapy settings for darazscraper project
+# Scrapy settings for tech_product_scraper project
 import os
 from decouple import AutoConfig
 
-BOT_NAME = "darazscraper"
+BOT_NAME = "tech_product_scraper"
 
-SPIDER_MODULES = ["darazscraper.spiders"]
-NEWSPIDER_MODULE = "darazscraper.spiders"
+SPIDER_MODULES = ["tech_product_scraper.spiders"]
+NEWSPIDER_MODULE = "tech_product_scraper.spiders"
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 ENV_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -13,8 +13,9 @@ ENV_FILE = os.path.join(ENV_BASE_DIR, '..', '.env')
 
 config = AutoConfig(search_path=ENV_FILE)
 
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = "darazscraper (+http://www.yourdomain.com)"
+# USER_AGENT = "tech_product_scraper (+http://www.yourdomain.com)"
 SCRAPEOPS_API_KEY = config('SCRAPEOPS_API_KEY')
 SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = config(
     'SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT')
@@ -54,14 +55,14 @@ ROTATING_PROXY_LIST_PATH = 'proxy_list.txt'
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    "darazscraper.middlewares.DarazscraperSpiderMiddleware": 543,
+#    "tech_product_scraper.middlewares.TechProductScraperSpiderMiddleware": 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
     # Fake Browser Header Middleware
-    'darazscraper.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 400,
+    'tech_product_scraper.middlewares.TechProductScraperDownloaderMiddleware': 400,
     # Proxy Rotation Middleware
     'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
@@ -76,7 +77,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    "darazscraper.pipelines.DarazscraperPipeline": 300,
+#    "tech_product_scraper.pipelines.TechProductScraperPipeline": 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
