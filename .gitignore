@@ -5,3 +5,8 @@
 # Environments
 *.env
 venv/
+
+# Proxy files
+free_proxy_list_one.txt
+free_proxy_list_two.txt
+free_proxy_list.txt

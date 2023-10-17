@@ -1,0 +1,11 @@
+'''
+    I also have this file where proxies are listed with details. But i need the ip address and port only.
+    For this purpose I made the extracting_proxies.py file to extract the proxies and concatenate with proxies 
+    in the free_proxy_list_one.txt file and store them into free_proxy_list.txt file 
+'''
+
+## Example proxies in this file 
+
+"14.248.94.123","elite","AS45899","VN","VNPT","291","Vietnam Posts and Telecommunications Group","5678","socks4","4904","1","2023-10-16T17:52:27.682Z","93","4083","4367"
+"103.105.40.21","elite","AS137143","IN","Minnal Digital Network Private Limited","190","Minnal Digital Network Private Limited","4145","socks4","4702","84","2023-10-16T17:52:27.683Z","99","4385","4413"
+"185.140.100.178","elite","AS203272","PL","Daniel Wojda trading as Netservice","74","Netservice Customers1","5678","socks4","5004","1","2023-10-16T17:52:15.577Z","94","4108","4353"
